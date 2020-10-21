@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  app:
+    container_name: node-mongo-dp
+    restart: always
+    build: .
+    ports:
+      - "82:3000"
+    links:
+      - mongo
+    environment:
+      GOOGLE_CLIENT_ID: 575560261535-ktdds83uvhqfqvasis6glkhpuc67j2lk.apps.googleusercontent.com
+      GOOGLE_CLIENT_SECRET: UI7EEBp03-qgzPOGPXpiErzR
+      mongo: mongodb://mongo:27017/storybooks
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"

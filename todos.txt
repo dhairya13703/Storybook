@@ -1,0 +1,2 @@
+Change the redirect uri from google console developer from below url(in web client1) when depolying this project
+https://console.developers.google.com/apis/credentials?project=storybook-292508
