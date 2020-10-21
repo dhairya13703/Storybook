@@ -1,5 +1,13 @@
 # StoryBooks
 
+## Create .env file in config folder
+
+` config/.env` example
+PORT = 3000
+mongo = xxxxx
+GOOGLE_CLIENT_ID = xxxxx
+GOOGLE_CLIENT_SECRET = xxxxx
+
 > Create public and private stories from your life
 
 This app uses Node.js/Express/MongoDB with Google OAuth for authentication
